@@ -1,16 +1,12 @@
-import logo from './logo.svg';
+import './style/antd.css'
+import './style/global.less'
 import './App.css';
+import Home from './home'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          欢迎来到react-pc项目
-        </p>
-        
-      </header>
+      <Home />
     </div>
   );
 }
