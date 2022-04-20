@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.less';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
 const { Header, Content, Sider } = Layout;
@@ -6,7 +7,6 @@ const items1 = ['1', '2', '3'].map((key) => ({
   key,
   label: `nav ${key}`,
 }));
-
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map((icon, index) => {
   const key = String(index + 1);
   return {
@@ -22,8 +22,6 @@ const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map((icon, i
     }),
   };
 });
-
-// eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
   <Layout>
     <Header className="header">

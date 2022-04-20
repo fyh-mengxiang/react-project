@@ -1,7 +1,7 @@
-import './style/antd.css'
+import Home from './home'
 import './style/global.less'
 import './App.css';
-import Home from './home'
+import './style/antd.css'
 
 function App() {
   return (
